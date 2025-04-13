@@ -5,17 +5,29 @@ class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Console Calculator: \n\n1. Qo'shish \n2. Ayirish \n3. Ko'paytirish \n4. Bo'lish \n5. Qoldiqli bo'lish \n6. Faktorial");
+        Console.WriteLine("Console Calculator: \n\n1. Qo'shish \n2. Ayirish \n3. Ko'paytirish \n4. Bo'lish \n5. Qoldiqli bo'lish \n6. Faktorial \n7. pow \n8. sqrt");
 
         int select = Convert.ToInt32(Console.ReadLine());
 
         switch (select)
         {
             case 1:
-                //code
+                Console.Write("1- Son kiritin! - ");
+                double number = Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("2- Son kiritin! - ");
+                double secondNumber = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine(number + secondNumber); 
                 break;
             case 2:
-                // code
+                Console.Write("1- Son kiritin! - ");
+                double numbers = Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("2- Son kiritin! - ");
+                double secondNumbers = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine(numbers + secondNumbers);
                 break;
             case 3:
                 //code
