@@ -1,10 +1,11 @@
 ﻿using Calculator;
+using Saloomaatt_V2.Samandar;
 
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Console Calculator: \n\n1. Qo'shish \n2. Ayirish \n3. Ko'paytirish \n4. Bo'lish \n5. Qoldiqli bo'lish");
+        Console.WriteLine("Console Calculator: \n\n1. Qo'shish \n2. Ayirish \n3. Ko'paytirish \n4. Bo'lish \n5. Qoldiqli bo'lish \n6. Faktorial");
 
         int select = Convert.ToInt32(Console.ReadLine());
 
@@ -31,6 +32,13 @@ class Program
 
                 MathV2.qoldiqliBolish(number1, number2);
                 break;
+            case 6:
+                Console.Write("Butun son kiriting : ");
+                int son = Convert.ToInt32(Console.ReadLine());
+                int faktorial = Faktorial.Faktoriall(son);
+                Console.WriteLine("Berilgan sonning faktoriali : " + faktorial);
+                break;
+                default: Console.WriteLine("Bunday amal yo'q!"); break;
         }
     }
 }
