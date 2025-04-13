@@ -1,5 +1,5 @@
-﻿using Calculator;
-using Saloomaatt_V2.Samandar;
+﻿using Saloomaatt_V2.Samandar;
+using Saloomaatt_V2.wwLinux;
 
 class Program
 {
@@ -30,7 +30,7 @@ class Program
                 Console.Write("2- Son kiritin! - ");
                 double number2 = Convert.ToDouble(Console.ReadLine());
 
-                MathV2.qoldiqliBolish(number1, number2);
+                QoldiqliBolish.qoldiqliBolish(number1, number2);
                 break;
             case 6:
                 Console.Write("Butun son kiriting : ");
